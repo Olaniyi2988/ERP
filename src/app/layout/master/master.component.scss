@@ -26,7 +26,11 @@
 // .main-container.expanded {
 //     margin-left: 0;
 // }
-
+.searchbar-container{
+  display: none;
+  padding: 1rem;
+  box-sizing: border-box;
+}
 .main-container {
     // transition: 0.3s ease-in-out;
     flex: 1;
@@ -149,7 +153,11 @@
 //   }
   
 
-
+@media only screen and (max-width: 767px) {
+  .searchbar-container{
+    display: block;
+  }
+}
 
 
   
