@@ -1,0 +1,28 @@
+<div class="top-products">
+    <p class="top-products-title">Top Products</p>
+    <div class="top-products-table-container">
+      <table class="top-products-table">
+        <thead>
+          <tr class="top-products-table-row">
+            <th class="top-products-table-head">#</th>
+            <th class="top-products-table-head">Name</th>
+            <th class="top-products-table-head">Popularity</th>
+            <th class="top-products-table-head">Sales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="top-products-table-row" *ngFor="let item of tableData; let i = index">
+            <td class="top-products-table-data">{{ item.id }}</td>
+            <td class="top-products-table-data">{{ item.name }}</td>
+            <td class="top-products-table-data">
+              <div class="progress-bar">
+                <div class="progress" [style.width.%]="item.progress" [style.background-color]="item.color"></div>
+              </div>
+            </td>
+            <td class="top-products-table-data"><span>{{ item.progress }}%</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

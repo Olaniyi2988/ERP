@@ -1,0 +1,85 @@
+
+.members-header{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+}
+
+.members-header-small{
+    width: 35.7%;
+    // height: 200px;
+    // background-color: red;
+}
+.main-section{
+    margin: 0 1rem;
+}
+.main-section-title{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: #224957;
+    margin-bottom: 1rem;
+}
+.members-top{
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.members-bottom{
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+}
+.sponsors-container{
+    width: 20%;
+}
+.product-design-container{
+    width: 57%;
+}
+.qa-container{
+    width: 20%;
+}
+.management-container{
+    width: 25%;
+}
+.user-interface-container{
+    width: 25%;
+    margin: 0 2rem;
+}
+.new-members-stats-container{
+    width: 20%;
+}
+.new-members-stats{
+    height: 300px;
+    border-radius: 15px;
+    background: rgb(34,73,87);
+    background: linear-gradient(0deg, rgba(34,73,87,1) 11%, rgba(46,183,114,1) 100%);
+    padding: 2rem;
+    
+
+    .fa-user-plus{
+        font-size: 1.7rem;
+        color: #224957;
+    }
+    p{
+        margin: 0;
+    }
+    .t1{
+        margin: 0.5rem 0;
+        color: #fff;
+        font-size: large;
+        font-weight: 600;
+    }
+    .t2{
+        margin: 0.5rem 0;
+        color: #fff;
+        font-size: medium;
+        font-weight: 300;
+    }
+    .t3{
+        color: #224957;
+    }
+}

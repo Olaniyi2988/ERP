@@ -1,0 +1,60 @@
+<div class="sidebar">
+    <div class="side-bar-header">
+      <img src='assets/logo.png' alt="" width={250} />
+    </div>
+    <div class="side-bar-body">
+        <div class="items" (click)="setActive('dashboard')" [class.active]="activeItem === 'dashboard'" routerLink="dashboard">
+          <!-- <a href="/dashboard"> Dashboard</a> -->
+          <i class="fas fa-dashboard"></i>
+          <p>Dashboard</p>
+        </div>
+
+        <div class="items" (click)="setActive('sales')" [class.active]="activeItem === 'sales'" routerLink="sales">
+          <!-- <a href="/members"> Members</a> -->
+          <i class="fas fa-receipt"></i>
+          <p>Sales</p>
+        </div>
+
+        <div class="items" (click)="setActive('inventory')" [class.active]="activeItem === 'inventory'" routerLink="inventory">
+          <!-- <a href="/projects"> Projects</a> -->
+          <i class="fas fa-project-diagram"></i>
+          <p>Inventory</p>
+        </div>
+
+        <div class="items" (click)="setActive('procurement')" [class.active]="activeItem === 'procurement'" routerLink="procurement">
+          <!-- <a href="/projects"> Projects</a> -->
+          <i class="fas fa-project-diagram"></i>
+          <p>Procurement</p>
+        </div>
+
+        <div class="items" (click)="setActive('finance')" [class.active]="activeItem === 'finance'" routerLink="finance">
+          <!-- <a href="/accounting"> Accounting</a> -->
+          <i class="fas fa-file-invoice"></i>
+          <p>Finance</p>
+        </div>
+
+        <div class="items" (click)="setActive('human-resource')" [class.active]="activeItem === 'human-resource'" routerLink="human-resource">
+          <!-- <a href="/sales"> Sales</a> -->
+          <i class="fas fa-users"></i>
+          <p>Human Resource</p>
+        </div>
+
+        <div class="items" (click)="setActive('crm')" [class.active]="activeItem === 'crm'" routerLink="crm">
+          <!-- <a href="/customers"> Customers</a> -->
+          <i class="fas fa-people-group"></i>
+          <p>CRM</p>
+        </div>
+
+        <div class="items" (click)="setActive('report-analytics')" [class.active]="activeItem === 'report-analytics'" routerLink="report-analytics">
+          <!-- <a href="/"> Chat Support</a> -->
+          <i class="fas fa-headset"></i>
+          <p>Report and Analysis</p>
+        </div>
+
+        <div class="items" (click)="setActive('settings')" [class.active]="activeItem === 'settings'" routerLink="settings">
+          <!-- <a href="/settings"> Settings</a> -->
+          <i class="fas fa-gears"></i>
+          <p>Settings</p>
+        </div>
+    </div>
+</div>

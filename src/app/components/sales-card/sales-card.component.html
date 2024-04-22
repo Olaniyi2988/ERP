@@ -1,0 +1,10 @@
+<div class="container-sales">
+    <div 
+      *ngFor="let salesno of salesnos; let i = index" 
+      class='sales bg-{{i+1}}'>
+      <p class='sales-no'>{{salesno}}</p>
+      <p class='sales-tittle'>{{titles[i]}}</p>
+    </div>
+</div>
+
+

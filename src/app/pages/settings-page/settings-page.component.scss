@@ -1,0 +1,116 @@
+.settings-header-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.settings-header{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+.settings-searchbar-container{
+    width: 45%;
+}
+.settings-headersmall-container{
+    width: 50%;
+}
+
+
+.settings-body-container{
+    padding: 1rem;
+    width: 80%;
+}
+.settings-body-title{
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    color: #224957;
+    text-transform: capitalize;
+}
+
+.settings-body{
+    justify-content: space-between;
+}
+.items{
+    display: block;
+    margin: 2rem 0;
+    padding: 0 1rem;
+
+    .item{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        color: #AAB2C8;
+
+        .right{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            i{
+                height: 30px;
+                width: 30px;
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+
+            span{
+                margin-left: 1rem;
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+        }
+        .left{
+            i{
+                font-size: 1.1em;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content{
+
+        .img-container{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    
+        .btn-container{
+            margin-top: 2rem;
+            text-align: center;
+            button{
+                border: none;
+                background-color: #43BE80;
+                color: #fff;
+                padding: 2rem 6rem;
+                border-radius: 10px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                transition: all 0.25s ease-out;
+            }
+            .button:hover {
+                transform: translateY(-3px);
+            }
+              
+            .button-span {
+                color: #aaa;
+            }
+        }
+    }
+}

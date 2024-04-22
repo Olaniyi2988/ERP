@@ -1,0 +1,40 @@
+
+<div class="main" >
+    <div class="login-container" >
+        <div class="login">
+            <div class="logo-img">
+                <img src="../../../assets/Logo-green.png" alt="Logo">
+            </div>
+            <h4 class="text-center mt-3 mb-4">Welcome to OPTIMAX</h4>
+            <div class="content">
+                <div class="items">
+                    <input type="text" placeholder="First name" id="firstname" name="firstname" required [(ngModel)]="register.firstname" >
+                    <input type="text" placeholder="Last name" id="lastname" name="lastname" required class="ms-2" [(ngModel)]="register.lastname" >
+                </div>
+                <div class="items">
+                    <input type="email" placeholder="Email" id="email" name="email" required [(ngModel)]="register.email" >
+                </div>
+                <div class="items">
+                    <input type="password" placeholder="Password" id="password" name="password" required [(ngModel)]="register.password">
+                    <input type="password" placeholder="Re-type password" class="ms-2">
+                </div>
+                <div class="wrapper mt-3">
+                    <div class="d-flex">
+                        <div class="me-2"><input type="checkbox"></div>
+                        <label for="Paddword">I've read and agreed to the <span>Terms & Conditions.</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="login-btn-container mt-3">
+                <button (click)="onRegister()" >Create account</button>
+            </div>
+            <div class="bottom">
+                <p>Already registered? <span routerLink="/login">sign-in</span></p>
+                
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+

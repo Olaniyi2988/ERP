@@ -1,0 +1,36 @@
+.earnings{
+    width: 100%;
+    height: 285px;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #2EB772;
+}
+.earnings-title{
+    color: #fff;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.earnings-subtitle{
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.earnings-amount{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: #A9DFD8;
+    padding: 0.5rem 0;
+}
+.earnings-content{
+    color: #fff;
+    font-size: large;
+    font-weight: 400;
+    /* z-index: 1; */
+    /* top: 50px; */
+    /* position: absolute; */
+    
+}

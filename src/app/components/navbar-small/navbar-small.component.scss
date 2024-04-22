@@ -1,0 +1,101 @@
+.headersmall-container{
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #224957;
+}
+.headersmall-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.headersmall-items{
+    margin-right: 1rem;
+}
+.headersmall-profile-item{
+    display: flex;
+    align-items: center;
+}
+.headersmall-items .menu-icon{
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 1rem;
+
+}
+.fa-message{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+.fa-bell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #DEEEE6;
+    transition-duration: .3s;
+}
+.fa-bell:hover {
+    animation: bellRing 0.9s both;
+    }
+    
+    /* bell ringing animation keyframes*/
+    @keyframes bellRing {
+    0%,
+    100% {
+        transform-origin: top;
+    }
+    
+    15% {
+        transform: rotateZ(10deg);
+    }
+    
+    30% {
+        transform: rotateZ(-10deg);
+    }
+    
+    45% {
+        transform: rotateZ(5deg);
+    }
+    
+    60% {
+        transform: rotateZ(-5deg);
+    }
+    
+    75% {
+        transform: rotateZ(2deg);
+    }
+    }
+    
+    .fa-bell:active {
+    transform: scale(0.8);
+    }
+
+.headersmall-profile-item{
+    display: flex;
+    align-items: center;
+}
+.headersmall-profile-img-container{
+    margin-right: 0.5rem;
+}
+.headersmall-profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+// .fa-ellipsis-vertical{
+//     cursor: pointer;
+//     width: 20px;
+//     height: 20px;
+//     padding: 0.5em;
+//     border-radius: 50%;
+//     background-color: #DEEEE6;
+// }
+

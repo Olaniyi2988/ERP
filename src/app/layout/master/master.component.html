@@ -1,0 +1,13 @@
+<div class="master-container" >
+    <div class="sidebar-container" [ngClass]="{ 'show': !sidebarHidden, 'hidden': sidebarHidden }" (click)="handleButtonClick()">
+        <app-sidebar #sidebar class="fixed-sidebar"></app-sidebar>
+    </div>
+    <div class="main-container">
+        <div class="navbar-container">
+            <app-navbar (toggleSidebar)="toggleSidebar()"></app-navbar>
+        </div>
+        <div class="main">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
