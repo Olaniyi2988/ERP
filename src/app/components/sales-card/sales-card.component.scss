@@ -1,9 +1,11 @@
 .container-sales{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 
     .sales{
-        width: 25%;
+        flex: 20%; /* Each item takes up 50% of the container's width */
+
         border-radius: 10px;
         margin-right: 1rem;
         // color: white;
@@ -34,6 +36,29 @@
     
 
 }
+@media screen and (max-width: 992px){
+    .container-sales {
+        .sales {
+            flex: 0 0 calc(50% - 1rem); /* Each item takes up 50% of the container's width with a small margin between them on smaller screens */
+            margin-bottom: 1rem; /* Add margin bottom to ensure space between rows */
+            // margin-right: 1rem; /* Remove right margin for the last item in each row */
+          }
+      }
+}
+
+@media screen and (max-width: 767px){
+    .container-sales {
+        .sales {
+            flex: 0 0 100%; /* Each item takes up 100% of the container's width on smaller screens */
+            margin-bottom: 1rem;
+          }
+      }
+
+}
+
+
+
+
 
 
 
