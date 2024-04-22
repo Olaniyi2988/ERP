@@ -21,7 +21,7 @@ export const routes: Routes = [
         component: DefaultComponent,
         children: [
             {
-                path: 'login', 
+                path: '', 
                 component: LoginComponent, 
             },
             {
