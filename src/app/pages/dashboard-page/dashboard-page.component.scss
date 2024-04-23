@@ -5,23 +5,7 @@
         width: 100%;
         height: 100vh;
 
-        .header{
-            width: 100%;
-            height: 80px;
-        }
         .main{
-            .dashboard-searchbar{
-                width: 100%;
-                /* background-color: aqua; */
-                display: flex;
-                justify-content: end;
-
-                .searchbar-container{
-                    width: 30%;
-                    padding: 1rem;
-                    box-sizing: border-box;
-                }
-            }
 
             .main-section{
                 padding: 0 1rem;
@@ -84,6 +68,20 @@
                             width: 100%;
                             margin-top: 1rem;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .dashboard{
+        .body{
+            .main{
+                .main-section{
+                    .main-section-title{
+                        font-size: 1.3em;
                     }
                 }
             }

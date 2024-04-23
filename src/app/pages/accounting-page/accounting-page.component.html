@@ -1,25 +1,43 @@
 <div class='accounting-container'>
     <div class="accounting-body">
-      <h1 class='accounting-body-title'>Accounting</h1>
+      <h1 class='accounting-body-title'>Finance</h1>
+      <hr />
       <div class="first-container">
         <div class="today-sales-container">
           <!-- today sales component here -->
           <app-today-sales></app-today-sales>
         </div>
-        <div class="levels-container">
-          <!-- levels component here -->
-          <app-levels></app-levels>
-        </div>
-        <div class="earnings-container">
-          <!-- earnings component here -->
-          <app-earnings></app-earnings>
-        </div>
-      </div>
-      <div class="second-container">
-        <div class="top-products-container">
+        <div class="top-products-container hidden show">
           <!-- top product component here -->
           <app-top-ptoducts></app-top-ptoducts>
         </div>
+        <div class="flex md-hidden">
+          <div class="levels-container">
+            <!-- levels component here -->
+            <app-levels></app-levels>
+          </div>
+          <div class="earnings-container">
+            <!-- earnings component here -->
+            <app-earnings></app-earnings>
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <div class="top-products-container md-hidden">
+          <!-- top product component here -->
+          <app-top-ptoducts></app-top-ptoducts>
+        </div>
+        <div class="flex show hidden">
+          <div class="levels-container">
+            <!-- levels component here -->
+            <app-levels></app-levels>
+          </div> 
+          <div class="earnings-container mt-3">
+            <!-- earnings component here -->
+            <app-earnings></app-earnings>
+          </div>
+        </div>
+       <div class="flex-2">
         <div class="customer-fulfilment-container">
           <!-- customerfulfilment component here -->
           <app-customer-fulfilment></app-customer-fulfilment>
@@ -28,6 +46,7 @@
           <!-- Total revenue component here -->
           <app-total-revenue></app-total-revenue>
         </div>
+       </div>
       </div>
     </div>
 </div>

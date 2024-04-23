@@ -7,12 +7,10 @@
 }
 .accounting-header{
     display: flex;
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 
 .accounting-searchbar-container{
@@ -23,25 +21,11 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .accounting-body{
     padding: 1rem;
 }
 .accounting-body-title{
-    font-size: 2.5em;
-    letter-spacing: 3px;
+    font-size: 1.5em;
     color: #224957;
     text-transform: capitalize;
 }
@@ -55,13 +39,17 @@
 .today-sales-container{
     width: 45%;
 }
+.flex{
+    display: flex;
+    width: 50%;
+}
 .levels-container{
-    width: 20%;
+    width: 50%;
     height: 285px;
     margin-left: 1rem;
 }
 .earnings-container{
-    width: 20%;
+    width: 50%;
     margin-left: 1rem;
     height: 285px;
 }
@@ -75,12 +63,106 @@
     width: 45%;
 }
 .customer-fulfilment-container{
-    width: 20%;
+    width: 50%;
     height: 285px;
     margin-left: 1rem;
 }
 .total-revenue-container{
-    width: 20%;
+    width: 50%;
     margin-left: 1rem;
     height: 285px;
+}
+.hidden{
+    display: none;
+}
+.flex-2{
+    display: flex;
+    width: 50%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px){
+    .accounting-body-title{
+        font-size: 1.5em;
+    }
+    .show{
+        display: block;
+    }
+    .flex{
+        display: block;
+        width: 49%;
+    }
+    .flex-2{
+        display: block;
+        width: 49%;
+    }
+    .md-hidden{
+        display: none;
+    }
+    .first-container{
+        justify-content: space-between;
+    }
+    .second-container{
+        justify-content: space-between;
+    }
+    .today-sales-container{
+        width: 49%;
+    }
+    .levels-container{
+        width: 100%;
+        margin: 0;
+        height: 285px;
+    }
+    .earnings-container{
+        width: 100%;
+        margin: 0;
+        height: 285px;
+    }
+    .top-products-container{
+        width: 49%;
+    }
+
+    .customer-fulfilment-container{
+        width: 100%;
+        margin: 0;
+    }
+    .total-revenue-container{
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .first-container{
+        display: block;
+    }
+    .today-sales-container,
+    .top-products-container{
+        width: 100%;
+    }
+    .top-products-container{
+        margin-top: 1rem;
+    }
+    .accounting-body-title{
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    .second-container{
+        display: block;
+    }
+    .flex{
+        width: 100%;
+    }
+    .flex-2{
+        margin-top: 1rem;
+        width: 100%;
+    }
 }
