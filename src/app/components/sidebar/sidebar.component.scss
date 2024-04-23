@@ -71,3 +71,37 @@
 // .side-bar-icon{
 //     margin-right: 1em;
 // }
+
+
+
+
+@media screen and (max-width: 767px){
+    .sidebar{
+    
+        .side-bar-header{
+            img{
+                width: 50%;
+            }
+        }
+    
+        .side-bar-body{
+    
+            .items{
+    
+                i{
+                }
+                p{
+                    font-size: 0.7em;
+                }
+    
+                 &.active {
+                }
+    
+            }
+            .items:hover{
+            }
+    
+    
+        }
+    }
+}
