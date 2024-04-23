@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 
 .members-header{
     display: flex;
@@ -100,6 +105,9 @@
     .show{
         display: block;
     }
+    .show-sm{
+        display: block;
+    }
     .sponsors-container{
         width: 49%;
     }
@@ -131,6 +139,12 @@
 
 @media screen and (max-width: 767px){
     .hidden{
+        display: block;
+    }
+    .xsm-show{
+        display: none;
+    }
+    .show-sm{
         display: none;
     }
     .sm-show{
