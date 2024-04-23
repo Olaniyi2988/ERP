@@ -28,10 +28,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+
 .members-bottom{
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
+
 }
 .sponsors-container{
     width: 20%;
@@ -42,6 +45,8 @@
 .qa-container{
     width: 20%;
 }
+
+
 .management-container{
     width: 25%;
 }
@@ -51,6 +56,9 @@
 }
 .new-members-stats-container{
     width: 20%;
+}
+.hidden{
+    display: none;
 }
 .new-members-stats{
     height: 300px;
@@ -82,4 +90,68 @@
     .t3{
         color: #224957;
     }
+}
+
+
+@media screen and (max-width: 992px){
+    .md-hidden{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    .sponsors-container{
+        width: 49%;
+    }
+    .product-design-container{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .qa-container{
+        width: 49%;
+    }
+
+
+    .members-bottom{
+        justify-content: space-between;
+    }
+    .management-container{
+        width: 49%;
+    }
+    .user-interface-container{
+        width: 49%;
+        margin: 0;
+    }
+    .new-members-stats-container{
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .hidden{
+        display: none;
+    }
+    .sm-show{
+        display: block;
+    }
+    .qa-container{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .sponsors-container{
+        width: 100%;
+    }
+    .members-bottom{
+        display: block;
+    }
+    .management-container{
+        width: 100%;
+    }
+    .user-interface-container{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
 }
