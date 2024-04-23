@@ -67,3 +67,26 @@
 
 
 
+@media screen and (max-width: 992px){
+    .dashboard{
+        .body{
+            .main{
+                .main-section{
+                    .sales-container{
+                        
+                    }
+                    .today-top-container{
+                        display: block;
+                        flex-wrap: nowrap;
+
+                         
+                        .top-product-container{
+                            width: 100%;
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

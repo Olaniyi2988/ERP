@@ -67,3 +67,26 @@
 .color-4{
     color: #20AEF3;
 }
+
+
+@media screen and (max-width: 992px){
+    .todaysales-body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .todaysales-card{
+        flex: 0 0 calc(50% - 0.5rem);
+        // max-width: calc(50% - 1rem);
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .todaysales-body{
+        display: block;
+    }
+    .todaysales-card{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

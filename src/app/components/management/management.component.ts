@@ -22,7 +22,6 @@ export class ManagementComponent {
     { img: 'assets/profile.jpg', name: 'AB', position: 'Project Manager' },
     { img: 'assets/profile.jpg', name: 'AB', position: 'Management Lead' },
     { img: 'assets/profile.jpg', name: 'AB', position: 'Project Manager' },
-
   ];
 
 
