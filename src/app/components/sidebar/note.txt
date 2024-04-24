@@ -11,7 +11,7 @@
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="setActive('sales')" [class.active]="activeItem === 'sales'" routerLink="sales">
           <!-- <a href="/members"> Members</a> -->
           
           <div class="d-flex">
@@ -26,7 +26,7 @@
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="setActive('inventory')" [class.active]="activeItem === 'inventory'" routerLink="inventory">
           <!-- <a href="/projects"> Projects</a> -->
           <div class="d-flex">
             <i class="fas fa-project-diagram"></i>
@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="setActive('procurement')" [class.active]="activeItem === 'procurement'" routerLink="procurement">
           <!-- <a href="/projects"> Projects</a> -->
           <div class="d-flex">
             <i class="fas fa-project-diagram"></i>
@@ -54,7 +54,7 @@
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="setActive('finance')" [class.active]="activeItem === 'finance'" routerLink="finance">
           <!-- <a href="/accounting"> Accounting</a> -->
           <div class="d-flex">
             <i class="fas fa-file-invoice"></i>
@@ -69,7 +69,7 @@
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="setActive('human-resource')" [class.active]="activeItem === 'human-resource'" routerLink="human-resource">
           <!-- <a href="/sales"> Sales</a> -->
           <div class="d-flex">
             <i class="fas fa-users"></i>
@@ -83,7 +83,7 @@
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="setActive('crm')" [class.active]="activeItem === 'crm'" routerLink="crm">
           <!-- <a href="/customers"> Customers</a> -->
           <div class="d-flex">
             <i class="fas fa-people-group"></i>
@@ -98,7 +98,7 @@
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="setActive('report-analytics')" [class.active]="activeItem === 'report-analytics'" routerLink="report-analytics">
           <!-- <a href="/"> Chat Support</a> -->
           <div class="d-flex">
             <i class="fas fa-headset"></i>
@@ -113,7 +113,7 @@
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="setActive('settings')" [class.active]="activeItem === 'settings'" routerLink="settings">
           <!-- <a href="/settings"> Settings</a> -->
           <div class="d-flex">
             <i class="fas fa-gears"></i>
