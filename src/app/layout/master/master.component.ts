@@ -46,7 +46,7 @@ export class MasterComponent {
   
     handleButtonClick() {
       // Hide the sidebar when a button within the sidebar is clicked
-      this.sidebarHidden = true;
+      this.sidebarHidden = false;
     }
   
 
