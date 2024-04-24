@@ -12,13 +12,15 @@ import { RouterLink } from '@angular/router';
 export class SidebarComponent {
 
   activeItem: string | null = null;
+  dropdownOpen: string | null = null;
+  sidebarHidden: boolean = true;
+
+
+  constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
+
   
   ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
     this.activeItem = 'dashboard';
-
-    
   }
 
   setActive(item: string) {
@@ -26,14 +28,22 @@ export class SidebarComponent {
   }
 
 
-  constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
 
-  toggleSidebar(hidden: boolean) {
-    if (hidden) {
-      this.renderer.setStyle(this.elementRef.nativeElement, 'display', 'none');
+  toggleDropdown(item: string) {
+    if (this.dropdownOpen === item) {
+        this.dropdownOpen = null;
     } else {
-      this.renderer.setStyle(this.elementRef.nativeElement, 'display', 'block');
+        this.dropdownOpen = item;
     }
-  }
+}
+toggleSidebar() {
+  this.sidebarHidden = !this.sidebarHidden;
+}
+
+
+onClick() {
+      this.sidebarHidden = true;
+
+}
 
 }

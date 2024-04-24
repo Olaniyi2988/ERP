@@ -1,9 +1,9 @@
-<div class="sidebar">
+<div class="sidebar" [ngClass]="{ 'show': !sidebarHidden, 'hidden': sidebarHidden }"   (click)="onClick()">
     <div class="side-bar-header">
       <img src='assets/logo.png' alt="" width={250} />
     </div>
     <div class="side-bar-body">
-        <div class="items" (click)="setActive('dashboard')" [class.active]="activeItem === 'dashboard'" routerLink="dashboard">
+        <div class="items"  routerLink="dashboard">
           <!-- <a href="/dashboard"> Dashboard</a> -->
           <div class="d-flex">
             <i class="fas fa-dashboard"></i>
@@ -11,7 +11,7 @@
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="toggleDropdown('sales')" [class.active]="activeItem === 'sales'">
           <!-- <a href="/members"> Members</a> -->
           
           <div class="d-flex">
@@ -19,42 +19,42 @@
             <p>Sales</p>
           </div>
 
-          <div class="list-item-content" >
+          <div class="list-item-content" *ngIf="dropdownOpen === 'sales'">
             <p>Option 1</p>
-            <p>Option 2</p>
-            <p>Option 3</p>
+            <p >Option 2</p>
+            <p >Option 3</p>
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="toggleDropdown('inventoty')" [class.active]="activeItem === 'inventoty'">
           <!-- <a href="/projects"> Projects</a> -->
           <div class="d-flex">
             <i class="fas fa-project-diagram"></i>
           <p>Inventory</p>
           </div>
 
-          <div class="list-item-content">
+          <div class="list-item-content" *ngIf="dropdownOpen === 'inventoty'">
             <p>Option 1</p>
             <p>Option 2</p>
             <p>Option 3</p>
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="toggleDropdown('procurement')" [class.active]="activeItem === 'procurement'">
           <!-- <a href="/projects"> Projects</a> -->
           <div class="d-flex">
             <i class="fas fa-project-diagram"></i>
           <p>Procurement</p>
           </div>
 
-          <div class="list-item-content">
+          <div class="list-item-content" *ngIf="dropdownOpen === 'procurement'">
             <p>Option 1</p>
             <p>Option 2</p>
             <p>Option 3</p>
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="toggleDropdown('finance')" [class.active]="activeItem === 'finance'">
           <!-- <a href="/accounting"> Accounting</a> -->
           <div class="d-flex">
             <i class="fas fa-file-invoice"></i>
@@ -62,28 +62,28 @@
           </div>
 
 
-          <div class="list-item-content">
+          <div class="list-item-content" *ngIf="dropdownOpen === 'finance'">
             <p>Option 1</p>
             <p>Option 2</p>
             <p>Option 3</p>
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="toggleDropdown('human-resource')" [class.active]="activeItem === 'human-resource'">
           <!-- <a href="/sales"> Sales</a> -->
           <div class="d-flex">
             <i class="fas fa-users"></i>
           <p>Human Resource</p>
           </div>
 
-          <div class="list-item-content">
+          <div class="list-item-content" *ngIf="dropdownOpen === 'human-resource'">
             <p>Option 1</p>
             <p>Option 2</p>
             <p>Option 3</p>
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="toggleDropdown('crm')" [class.active]="activeItem === 'crm'">
           <!-- <a href="/customers"> Customers</a> -->
           <div class="d-flex">
             <i class="fas fa-people-group"></i>
@@ -91,14 +91,14 @@
           </div>
 
 
-          <div class="list-item-content">
+          <div class="list-item-content" *ngIf="dropdownOpen === 'crm'">
             <p>Option 1</p>
             <p>Option 2</p>
             <p>Option 3</p>
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="toggleDropdown('report-analytics')" [class.active]="activeItem === 'report-analytics'">
           <!-- <a href="/"> Chat Support</a> -->
           <div class="d-flex">
             <i class="fas fa-headset"></i>
@@ -106,14 +106,14 @@
           </div>
 
 
-          <div class="list-item-content">
+          <div class="list-item-content" *ngIf="dropdownOpen === 'report-analytics'">
             <p>Option 1</p>
             <p>Option 2</p>
             <p>Option 3</p>
           </div>
         </div>
 
-        <div class="items">
+        <div class="items" (click)="toggleDropdown('settings')" [class.active]="activeItem === 'settings'" routerLink="settings">
           <!-- <a href="/settings"> Settings</a> -->
           <div class="d-flex">
             <i class="fas fa-gears"></i>

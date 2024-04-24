@@ -28,9 +28,9 @@
             .list-item-content{
                 display: none;
                 // position: absolute;
-                background-color: #224957;
-                min-width: 160px;
-                z-index: 1;
+                // background-color: #224957;
+                // min-width: 160px;
+                // z-index: 1;
 
                 p{
                     color: #fff;
@@ -67,7 +67,7 @@
         .items:hover{
             background-color: #2aa367;
         }
-        .items:hover .list-item-content{
+        .items::content .list-item-content{
             display: block;
             background-color: transparent;
         }
@@ -78,24 +78,6 @@
 
 
 
-
-// .active{
-//     border-radius: 5px;
-//     cursor: pointer;
-//     padding: 0.7em;
-//     box-sizing: border-box;
-//     margin-top: 1.5em;
-//     background-color: #25925B;
-
-// }
-// .items a,
-// .active a{
-//     color: white;
-//     font-weight: 600;
-// }
-// .side-bar-icon{
-//     margin-right: 1em;
-// }
 
 
 
