@@ -13,14 +13,13 @@ export class SidebarComponent {
 
   activeItem: string | null = null;
   dropdownOpen: string | null = null;
-  sidebarHidden: boolean = true;
 
 
   constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
 
   
   ngOnInit(): void {
-    this.activeItem = 'dashboard';
+    // this.activeItem = 'dashboard';
   }
 
   setActive(item: string) {
@@ -36,14 +35,9 @@ export class SidebarComponent {
         this.dropdownOpen = item;
     }
 }
-toggleSidebar() {
-  this.sidebarHidden = !this.sidebarHidden;
-}
 
 
-onClick() {
-      this.sidebarHidden = true;
 
-}
+
 
 }

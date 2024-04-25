@@ -1,4 +1,4 @@
-import { Component, ViewChild, HostListener } from '@angular/core';
+import { Component, ViewChild, HostListener, ElementRef} from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SidebarComponent } from '../../components/sidebar/sidebar.component';
@@ -15,15 +15,29 @@ import { SearchbarComponent } from '../../components/searchbar/searchbar.compone
 export class MasterComponent {
 
   sidebarHidden: boolean = true;
+closeSidebar: boolean = false
 
+
+  @ViewChild('sidebar') sidebar!: ElementRef;
+
+  constructor(private elementRef: ElementRef) {}
+  onClose() {
+    this.closeSidebar = true
+  }
   toggleSidebar() {
     this.sidebarHidden = !this.sidebarHidden;
   }
 
 
   
-
-
+  @HostListener('document:click', ['$event'])
+  onClick(event: MouseEvent) {
+    // Check if the click occurred outside the sidebar
+    if (!this.sidebar.nativeElement.contains(event.target)) {
+      this.sidebarHidden = true;
+    }
+  }
+  
   
 
 }

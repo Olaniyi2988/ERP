@@ -2,7 +2,7 @@
     // width: 15%;
     height: 100vh;
     left: -300px;
-    background-color: #224957;
+    background-color: #224957; // #224957
     transition: left 0.3s ease;
     text-decoration: none;
 
@@ -76,7 +76,11 @@
     }
 }
 
-
+@media screen and (max-width: 1200px) {
+    .hidden {
+    display: none; /* Hide the sidebar off-screen */
+  }
+}
 
 
 
