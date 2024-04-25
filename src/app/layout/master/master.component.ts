@@ -15,28 +15,25 @@ import { SearchbarComponent } from '../../components/searchbar/searchbar.compone
 export class MasterComponent {
 
   sidebarHidden: boolean = true;
-closeSidebar: boolean = false
 
 
-  @ViewChild('sidebar') sidebar!: ElementRef;
+  // @ViewChild('sidebar') sidebar!: ElementRef;
 
-  constructor(private elementRef: ElementRef) {}
-  onClose() {
-    this.closeSidebar = true
-  }
+  // constructor(private elementRef: ElementRef) {}
+
   toggleSidebar() {
     this.sidebarHidden = !this.sidebarHidden;
   }
 
 
   
-  @HostListener('document:click', ['$event'])
-  onClick(event: MouseEvent) {
-    // Check if the click occurred outside the sidebar
-    if (!this.sidebar.nativeElement.contains(event.target)) {
-      this.sidebarHidden = true;
-    }
-  }
+  // @HostListener('document:click', ['$event'])
+  // onClick(event: MouseEvent) {
+  //   // Check if the click occurred outside the sidebar
+  //   if (!this.sidebar.nativeElement.contains(event.target)) {
+  //     this.sidebarHidden = true;
+  //   }
+  // }
   
   
 

@@ -1,15 +1,15 @@
 <div class="master-container" >
-    <!-- <div class="sidebar-container" [ngClass]="{ 'show': !sidebarHidden, 'hidden': sidebarHidden }" > -->
+    <div class="sidebar-container" [ngClass]="{ 'show': !sidebarHidden, 'hidden': sidebarHidden }" >
         <!-- <div class="fixed-sidebar" > -->
 
-        <app-sidebar class="sidebar-container" #sidebar [ngClass]="{ 'show': !sidebarHidden, 'hidden': sidebarHidden }" ></app-sidebar>
+        <app-sidebar #sidebar ></app-sidebar>
 
         <!-- </div> -->
         
-    <!-- </div> -->
+    </div>
     <div class="main-container">
         <div class="navbar-container">
-            <app-navbar (click)="toggleSidebar()"></app-navbar>
+            <app-navbar (toggleSidebar)="toggleSidebar()"></app-navbar>
         </div>
         <div class="searchbar-container">
             <app-searchbar></app-searchbar>
