@@ -13,13 +13,14 @@ export class SidebarComponent {
 
   activeItem: string | null = null;
   dropdownOpen: string | null = null;
+  sidebarHidden: boolean = false;
 
 
   constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
 
   
   ngOnInit(): void {
-    // this.activeItem = 'dashboard';
+    this.activeItem = 'dashboard';
   }
 
   setActive(item: string) {
